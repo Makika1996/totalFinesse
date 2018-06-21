@@ -1,0 +1,71 @@
+.contact-us {
+  background-image: url("../images/shape-2-copy-3.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-color: $azure;
+  color: $white;
+
+  .nav-contact {
+    text-align: left;
+  }
+
+  .header {
+    text-align: center;
+    font-size: 44px;
+    padding: 25px 0 68px;
+  }
+
+  .contact-us-form {
+    text-align: center;
+
+    .row {
+      display: flex;
+      justify-content: center;
+
+      .column-left {
+        width: 404px;
+        padding-right: 44px;
+      }
+
+      .column-right {
+        width: 404px;
+        height: 188px;
+        text-align: left;
+      }
+    }
+  }
+
+  .wrap {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+
+    .contact {
+      padding-top: 70px;
+      padding-bottom: 30px;
+    }
+
+    .office {
+      padding-bottom: 18px;
+    }
+  }
+
+  .wrap-copyrights {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 5284px;
+  }
+
+  .back {
+    text-align: center;
+    padding-top: 10px;
+
+    p {
+      font-size: 10px;
+      font-weight: 700;
+      color: $white;
+      padding-top: 30px;
+    }
+  }
+}

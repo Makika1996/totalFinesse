@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  font-family: 'Muli', sans-serif;
+}
+
+.container {
+  width: 1440px;
+  padding-top: 30px;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.mini-header {
+  font-size: 18px;
+  font-weight: 400;
+}

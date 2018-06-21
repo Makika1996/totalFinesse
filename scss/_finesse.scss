@@ -1,0 +1,40 @@
+.finesse {
+  background-image: url("../images/layer-27.png");
+  background-size: cover;
+  background-color: $cloudBurst;
+  color: $white;
+
+  .nav-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header {
+    font-size: 70px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 292px;
+    padding-bottom: 39px;
+  }
+
+  .text {
+    text-align: center;
+    padding-bottom: 42px;
+  }
+
+  .buttons {
+    text-align: center;
+  }
+
+  .learn-more {
+    text-align: center;
+    padding-top: 176px;
+
+    p {
+      font-size: 10px;
+      font-weight: 700;
+      padding-top: 30px;
+      padding-bottom: 51px;
+    }
+  }
+}

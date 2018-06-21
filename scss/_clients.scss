@@ -1,0 +1,51 @@
+.clients {
+  background: $aliceBlue;
+
+  .nav-contact {
+    display: flex;
+    justify-content: space-between;
+    .btn {
+      color: black;
+    }
+  }
+
+  .header {
+    text-align: center;
+    padding-top: 24px;
+    padding-bottom: 48px;
+  }
+
+  .text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 104px;
+  }
+
+  .client-slider {
+    // display: flex;
+
+    .col-slider {
+      background: $white;
+      // height: 236px;
+      // width: 236px;
+    }
+  }
+
+  .our-clients {
+    text-align: center;
+    padding-top: 176px;
+
+    i {
+      color: $liveEvents;
+    }
+
+    p {
+      font-size: 10px;
+      font-weight: 700;
+      color: $liveEvents;
+      padding-top: 30px;
+      padding-bottom: 51px;
+    }
+  }
+}

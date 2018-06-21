@@ -1,0 +1,71 @@
+.digital {
+  background-image: url("../images/shape-2.png");
+  background: $blueViolet;
+  color: $white;
+
+  .nav-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .text-wrap {
+    max-width: 49%;
+    width: 100%;
+    display: inline-block;
+
+    .mini-header {
+      padding-top: 100px;
+      padding-bottom: 39px;
+    }
+
+    .header {
+      padding-bottom: 20px;
+    }
+
+    li {
+      font-size: 16px;
+      font-weight: 400;
+      padding-bottom: 20px;
+    }
+  }
+
+  .slider-wrap {
+    position: relative;
+    max-width: 50%;
+    display: inline-block;
+    width: 100%;
+
+    .mac {
+      .mac-slider {
+        width: 402px;
+        position: absolute;
+        top: 24px;
+        left: 104px;
+      }
+    }
+
+    .iphone {
+      position: absolute;
+      top: 120px;
+      right: 100px;
+
+      .iphone-slider {
+        width: 103px;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+    }
+  }
+
+  .finesse-digital {
+    text-align: center;
+
+    p {
+      font-size: 10px;
+      font-weight: 700;
+      padding-top: 30px;
+      padding-bottom: 40px;
+    }
+  }
+}

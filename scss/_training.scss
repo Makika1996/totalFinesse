@@ -1,0 +1,68 @@
+.training {
+  background-image: url("../images/layer-15.png");
+  background-size: cover;
+  background-color: $shark;
+
+
+  .nav-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .mini-header {
+    text-align: center;
+    color: $white;
+    padding-top: 115px;
+  }
+
+  .header {
+    text-align: center;
+    color: $white;
+    padding-top: 30px;
+    padding-top: 40px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 40px 0 54px 0;
+    text-align: center;
+
+    .column {
+      width: 290px;
+      height: 377px;
+      background-color: transparentize($shark, 0.2);
+      color: $white;
+
+      img {
+        color: $training;
+        font-size: 40px;
+        padding: 45px 0 35px;
+      }
+
+      .column-header {
+        font-size: 18px;
+        font-weight: 400;
+      }
+
+      .text {
+        font-size: 14px;
+        font-weight: 400;
+        padding: 24px 43px 113px;
+      }
+    }
+  }
+
+  .finesse-digital {
+    text-align: center;
+
+    p {
+      font-size: 10px;
+      font-weight: 700;
+      color: $white;
+      padding-top: 30px;
+      padding-bottom: 49px;
+    }
+  }
+}
