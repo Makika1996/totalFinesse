@@ -1,5 +1,5 @@
 $(function() {
-  $(document).ready(function(){
+  $(document).ready(function() {
     $(".client-slider").slick({
       slidesToShow: 5,
       slidesToScroll: 1,
@@ -21,6 +21,13 @@ $(function() {
       swipeToSlide: true,
       arrows: false
     });
+
+    // $(".page-slider").slick({
+    //   slidesToShow: 1,
+    //   slidesToScroll: 1,
+    //   arrows: true,
+    //   vertical: true
+    // });
   });
 
 
