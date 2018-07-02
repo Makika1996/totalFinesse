@@ -52,9 +52,29 @@
 
   .section-footer {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     margin-bottom: 30px;
+
+    &:after {
+      content: '';
+      flex: 0 1 calc(50% - 33.5px);
+      display: block;
+      height: 20px;
+    }
+
+    .wrap-copyrights {
+    }
+
+    .wrap-btn {
+      flex: 1;
+      text-align: right;
+    }
+
+    .wrap-btn-inner {
+      display: inline-block;
+      text-align: center;
+    }
 
     .btn {
       margin-right: 0;

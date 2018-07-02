@@ -622,14 +622,28 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-bottom: 30px; }
+    .contact-us .section-footer:after {
+      content: '';
+      -webkit-box-flex: 0;
+      -ms-flex: 0 1 calc(50% - 33.5px);
+      flex: 0 1 calc(50% - 33.5px);
+      display: block;
+      height: 20px; }
+    .contact-us .section-footer .wrap-btn {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      text-align: right; }
+    .contact-us .section-footer .wrap-btn-inner {
+      display: inline-block;
+      text-align: center; }
     .contact-us .section-footer .btn {
       margin-right: 0; }
     .contact-us .section-footer p {

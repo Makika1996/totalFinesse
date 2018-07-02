@@ -23,38 +23,26 @@ $(function() {
     });
 
     $(".btn-contact").on("click", function() {
-      $("html, body").animate({
-        scrollTop: $("#contact-us").offset().top + "px"
-      }, 1000)
+      $(".page-slider").moveTo(6);
     });
 
     $(".btn-training").on("click", function() {
-      $("html, body").animate({
-        scrollTop: $("#training").offset().top + "px"
-      }, 1000)
+      $(".page-slider").moveDown(1);
     });
 
     $(".btn-digital").on("click", function() {
-      $("html, body").animate({
-        scrollTop: $("#digital").offset().top + "px"
-      }, 1000)
+      $(".page-slider").moveDown(2);
     });
 
     $(".btn-liveEvents").on("click", function() {
-      $("html, body").animate({
-        scrollTop: $("#liveEvents").offset().top + "px"
-      }, 1000)
+      $(".page-slider").moveDown(3);
     });
-    $(".btn-clients").on("click", function() {
-      $("html, body").animate({
-        scrollTop: $("#clients").offset().top + "px"
-      }, 1000)
+    $(".btn-down").on("click", function() {
+      $(".page-slider").moveDown(1);
     });
 
     $(".btn-top").on("click", function() {
-      $("html, body").animate({
-        scrollTop: $("#finesse").offset().top + "px"
-      }, 1000)
+      $(".page-slider").moveTo(1);
     });
 
     $(".page-slider").onepage_scroll({
