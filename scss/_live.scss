@@ -10,12 +10,11 @@
   }
 
   .mini-header {
-    padding-top: 231px;
-    padding-bottom: 39px;
+    margin-bottom: 40px;
   }
 
   .header {
-    padding-bottom: 33px;
+    margin-bottom: 30px;
   }
 
   ul {
@@ -24,7 +23,7 @@
     li {
       font-size: 16px;
       font-weight: 400;
-      padding-bottom: 20px;
+      margin-bottom: 20px;
 
       &::before {
         content: "• ";
@@ -33,16 +32,18 @@
     }
   }
 
-  .our-clients {
+  .section-footer {
     text-align: center;
-    padding-top: 176px;
+    margin-bottom: 30px;
+
+    .btn {
+      margin-right: 0;
+    }
 
     p {
       font-size: 10px;
       font-weight: 700;
-      color: $white;
-      padding-top: 30px;
-      padding-bottom: 51px;
+      margin-top: 30px;
     }
   }
 }

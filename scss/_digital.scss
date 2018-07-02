@@ -14,18 +14,17 @@
     display: inline-block;
 
     .mini-header {
-      padding-top: 100px;
-      padding-bottom: 39px;
+      margin-bottom: 40px;
     }
 
     .header {
-      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
 
     li {
       font-size: 16px;
       font-weight: 400;
-      padding-bottom: 20px;
+      margin-bottom: 20px;
     }
   }
 
@@ -58,14 +57,18 @@
     }
   }
 
-  .finesse-digital {
+  .section-footer {
     text-align: center;
+    margin-bottom: 30px;
+
+    .btn {
+      margin-right: 0;
+    }
 
     p {
       font-size: 10px;
       font-weight: 700;
-      padding-top: 30px;
-      padding-bottom: 40px;
+      margin-top: 30px;
     }
   }
 }

@@ -50,16 +50,20 @@
     }
   }
 
-  .back {
-    text-align: center;
-    padding-top: 10px;
+  .section-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .btn {
+      margin-right: 0;
+    }
 
     p {
       font-size: 10px;
       font-weight: 700;
-      color: $white;
-      padding-top: 30px;
-      padding: 30px;
+      margin-top: 30px;
     }
   }
 }

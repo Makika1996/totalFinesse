@@ -1,5 +1,90 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Muli:300,400,700,900");
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  -o-transition: opacity 400ms;
+  transition: opacity 400ms; }
+
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d; }
+
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%; }
+
+.onepage-pagination {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.onepage-pagination li {
+  padding: 0;
+  text-align: center; }
+
+.onepage-pagination li a {
+  padding: 10px;
+  width: 4px;
+  height: 4px;
+  display: block; }
+
+.onepage-pagination li a:before {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
+
+.onepage-pagination li a.active:before {
+  width: 10px;
+  height: 10px;
+  background: none;
+  border: 1px solid black;
+  margin-top: -4px;
+  left: 8px; }
+
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto; }
+
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important; }
+
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%; }
+
+.disabled-onepage-scroll .onepage-pagination {
+  display: none; }
+
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit; }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -13,7 +98,20 @@ body {
 .container {
   width: 1440px;
   padding-top: 30px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  height: 100vh; }
+
+.page-section > .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
 
 .header {
   font-size: 48px;
@@ -292,26 +390,27 @@ body {
     font-size: 70px;
     font-weight: 400;
     text-align: center;
-    padding-top: 292px;
-    padding-bottom: 39px; }
+    margin-bottom: 40px; }
   .finesse .text {
     text-align: center;
     padding-bottom: 42px; }
   .finesse .buttons {
     text-align: center; }
-  .finesse .learn-more {
+  .finesse .section-footer {
     text-align: center;
-    padding-top: 176px; }
-    .finesse .learn-more p {
+    margin-bottom: 30px; }
+    .finesse .section-footer .btn {
+      margin-right: 0; }
+    .finesse .section-footer p {
       font-size: 10px;
       font-weight: 700;
-      padding-top: 30px;
-      padding-bottom: 51px; }
+      margin-top: 30px; }
 
 .training {
   background-image: url("../images/layer-15.png");
   background-size: cover;
-  background-color: #343840; }
+  background-color: #343840;
+  color: #fff; }
   .training .nav-contact {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -321,13 +420,9 @@ body {
     justify-content: space-between; }
   .training .mini-header {
     text-align: center;
-    color: #fff;
     padding-top: 115px; }
   .training .header {
-    text-align: center;
-    color: #fff;
-    padding-top: 30px;
-    padding-top: 40px; }
+    text-align: center; }
   .training .row {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -357,14 +452,15 @@ body {
         font-size: 14px;
         font-weight: 400;
         padding: 24px 43px 113px; }
-  .training .finesse-digital {
-    text-align: center; }
-    .training .finesse-digital p {
+  .training .section-footer {
+    text-align: center;
+    margin-bottom: 30px; }
+    .training .section-footer .btn {
+      margin-right: 0; }
+    .training .section-footer p {
       font-size: 10px;
       font-weight: 700;
-      color: #fff;
-      padding-top: 30px;
-      padding-bottom: 49px; }
+      margin-top: 30px; }
 
 .digital {
   background-image: url("../images/shape-2.png");
@@ -382,14 +478,13 @@ body {
     width: 100%;
     display: inline-block; }
     .digital .text-wrap .mini-header {
-      padding-top: 100px;
-      padding-bottom: 39px; }
+      margin-bottom: 40px; }
     .digital .text-wrap .header {
-      padding-bottom: 20px; }
+      margin-bottom: 20px; }
     .digital .text-wrap li {
       font-size: 16px;
       font-weight: 400;
-      padding-bottom: 20px; }
+      margin-bottom: 20px; }
   .digital .slider-wrap {
     position: relative;
     max-width: 50%;
@@ -409,13 +504,15 @@ body {
         position: absolute;
         top: 20px;
         left: 20px; }
-  .digital .finesse-digital {
-    text-align: center; }
-    .digital .finesse-digital p {
+  .digital .section-footer {
+    text-align: center;
+    margin-bottom: 30px; }
+    .digital .section-footer .btn {
+      margin-right: 0; }
+    .digital .section-footer p {
       font-size: 10px;
       font-weight: 700;
-      padding-top: 30px;
-      padding-bottom: 40px; }
+      margin-top: 30px; }
 
 .liveEvents {
   background-image: url("../images/layer-21.png");
@@ -430,28 +527,27 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .liveEvents .mini-header {
-    padding-top: 231px;
-    padding-bottom: 39px; }
+    margin-bottom: 40px; }
   .liveEvents .header {
-    padding-bottom: 33px; }
+    margin-bottom: 30px; }
   .liveEvents ul {
     list-style: none; }
     .liveEvents ul li {
       font-size: 16px;
       font-weight: 400;
-      padding-bottom: 20px; }
+      margin-bottom: 20px; }
       .liveEvents ul li::before {
         content: "• ";
         color: #277CE9; }
-  .liveEvents .our-clients {
+  .liveEvents .section-footer {
     text-align: center;
-    padding-top: 176px; }
-    .liveEvents .our-clients p {
+    margin-bottom: 30px; }
+    .liveEvents .section-footer .btn {
+      margin-right: 0; }
+    .liveEvents .section-footer p {
       font-size: 10px;
       font-weight: 700;
-      color: #fff;
-      padding-top: 30px;
-      padding-bottom: 51px; }
+      margin-top: 30px; }
 
 .clients {
   background: #F2F6FF; }
@@ -467,25 +563,23 @@ body {
   .clients .header {
     text-align: center;
     padding-top: 24px;
-    padding-bottom: 48px; }
+    margin-bottom: 50px; }
   .clients .text {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    padding-bottom: 104px; }
+    margin-bottom: 100px; }
   .clients .client-slider .col-slider {
     background: #fff; }
-  .clients .our-clients {
+  .clients .section-footer {
     text-align: center;
-    padding-top: 176px; }
-    .clients .our-clients i {
-      color: #277CE9; }
-    .clients .our-clients p {
+    margin-bottom: 30px; }
+    .clients .section-footer .btn {
+      margin-right: 0; }
+    .clients .section-footer p {
       font-size: 10px;
       font-weight: 700;
-      color: #277CE9;
-      padding-top: 30px;
-      padding-bottom: 51px; }
+      margin-top: 30px; }
 
 .contact-us {
   background-image: url("../images/shape-2-copy-3.png");
@@ -524,15 +618,24 @@ body {
       padding-bottom: 30px; }
     .contact-us .wrap .office {
       padding-bottom: 18px; }
-  .contact-us .back {
-    text-align: center;
-    padding-top: 10px; }
-    .contact-us .back p {
+  .contact-us .section-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 30px; }
+    .contact-us .section-footer .btn {
+      margin-right: 0; }
+    .contact-us .section-footer p {
       font-size: 10px;
       font-weight: 700;
-      color: #fff;
-      padding-top: 30px;
-      padding: 30px; }
+      margin-top: 30px; }
 
 .input-group {
   margin-bottom: 60px;

@@ -58,7 +58,7 @@ $(function() {
     });
 
     $(".page-slider").onepage_scroll({
-      sectionContainer: "section",
+      sectionContainer: ".page-section",
       easing: "ease",
       animationTime: 1000,
       pagination: true,

@@ -2,6 +2,7 @@
   background-image: url("../images/layer-15.png");
   background-size: cover;
   background-color: $shark;
+  color: $white;
 
 
   .nav-contact {
@@ -11,15 +12,11 @@
 
   .mini-header {
     text-align: center;
-    color: $white;
     padding-top: 115px;
   }
 
   .header {
     text-align: center;
-    color: $white;
-    padding-top: 30px;
-    padding-top: 40px;
   }
 
   .row {
@@ -54,15 +51,18 @@
     }
   }
 
-  .finesse-digital {
+  .section-footer {
     text-align: center;
+    margin-bottom: 30px;
+
+    .btn {
+      margin-right: 0;
+    }
 
     p {
       font-size: 10px;
       font-weight: 700;
-      color: $white;
-      padding-top: 30px;
-      padding-bottom: 49px;
+      margin-top: 30px;
     }
   }
 }
