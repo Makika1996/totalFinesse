@@ -31,11 +31,11 @@ $(function() {
     });
 
     $(".btn-digital").on("click", function() {
-      $(".page-slider").moveDown(2);
+      $(".page-slider").moveTo(3);
     });
 
     $(".btn-liveEvents").on("click", function() {
-      $(".page-slider").moveDown(3);
+      $(".page-slider").moveTo(4);
     });
     $(".btn-down").on("click", function() {
       $(".page-slider").moveDown(1);
