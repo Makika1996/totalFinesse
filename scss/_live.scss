@@ -9,28 +9,32 @@
     justify-content: space-between;
   }
 
-  .mini-header {
-    margin-bottom: 40px;
-  }
+  .intro-text {
 
-  .header {
-    margin-bottom: 30px;
-  }
+    .mini-header {
+      margin-bottom: 40px;
+    }
 
-  ul {
-    list-style: none;
+    .header {
+      margin-bottom: 30px;
+    }
 
-    li {
-      font-size: 16px;
-      font-weight: 400;
-      margin-bottom: 20px;
+    ul {
+      list-style: none;
 
-      &::before {
-        content: "• ";
-        color: $liveEvents;
+      li {
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 20px;
+
+        &::before {
+          content: "• ";
+          color: $liveEvents;
+        }
       }
     }
   }
+
 
   .section-footer {
     text-align: center;

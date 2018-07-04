@@ -4,7 +4,6 @@
   background-color: $shark;
   color: $white;
 
-
   .nav-contact {
     display: flex;
     justify-content: space-between;
@@ -12,7 +11,6 @@
 
   .mini-header {
     text-align: center;
-    padding-top: 115px;
   }
 
   .header {
@@ -21,10 +19,12 @@
 
   .row {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    padding: 40px 0 54px 0;
+    padding: 40px 0 55px;
     text-align: center;
+    @include mq(from768) {
+      
+    }
 
     .column {
       width: 290px;

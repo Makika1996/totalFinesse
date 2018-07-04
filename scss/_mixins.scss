@@ -1,1 +1,26 @@
 
+@mixin mq($resolution) {
+  @if ($resolution == to992) {
+    @media only screen and (max-width: 991px) { @content; }
+  }
+
+  @elseif ($resolution == from992) {
+    @media only screen and (min-width: 992px) { @content; }
+  }
+
+  @elseif ($resolution == to768) {
+    @media only screen and (max-width: 767px) { @content; }
+  }
+
+  @elseif ($resolution == from768) {
+    @media only screen and (min-width: 768px) { @content; }
+  }
+
+  @elseif ($resolution == to550) {
+    @media only screen and (max-width: 549px) { @content; }
+  }
+
+  @elseif ($resolution == from550) {
+    @media only screen and (min-width: 550px) { @content; }
+  }
+}

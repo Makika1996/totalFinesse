@@ -14,15 +14,24 @@
     font-weight: 400;
     text-align: center;
     margin-bottom: 40px;
+
+    @include mq(from768) {
+      font-size: 50px;
+    }
   }
 
   .text {
     text-align: center;
-    padding-bottom: 42px;
+    padding-bottom: 40px;
   }
 
   .buttons {
     text-align: center;
+  }
+
+  .btn-header {
+
+
   }
 
   .section-footer {
@@ -32,6 +41,7 @@
     .btn {
       margin-right: 0;
     }
+
 
     p {
       font-size: 10px;

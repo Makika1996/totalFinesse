@@ -51,7 +51,7 @@ body, .onepage-wrapper, html {
   position: absolute;
   width: 4px;
   height: 4px;
-  background: rgba(0, 0, 0, 0.85);
+  background: white;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px; }
@@ -60,7 +60,7 @@ body, .onepage-wrapper, html {
   width: 10px;
   height: 10px;
   background: none;
-  border: 1px solid black;
+  border: 1px solid white;
   margin-top: -4px;
   left: 8px; }
 
@@ -391,9 +391,12 @@ body {
     font-weight: 400;
     text-align: center;
     margin-bottom: 40px; }
+    @media only screen and (min-width: 768px) {
+      .finesse .header {
+        font-size: 50px; } }
   .finesse .text {
     text-align: center;
-    padding-bottom: 42px; }
+    padding-bottom: 40px; }
   .finesse .buttons {
     text-align: center; }
   .finesse .section-footer {
@@ -419,22 +422,17 @@ body {
     -ms-flex-pack: justify;
     justify-content: space-between; }
   .training .mini-header {
-    text-align: center;
-    padding-top: 115px; }
+    text-align: center; }
   .training .header {
     text-align: center; }
   .training .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 40px 0 54px 0;
+    padding: 40px 0 55px;
     text-align: center; }
     .training .row .column {
       width: 290px;
@@ -526,17 +524,17 @@ body {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between; }
-  .liveEvents .mini-header {
+  .liveEvents .intro-text .mini-header {
     margin-bottom: 40px; }
-  .liveEvents .header {
+  .liveEvents .intro-text .header {
     margin-bottom: 30px; }
-  .liveEvents ul {
+  .liveEvents .intro-text ul {
     list-style: none; }
-    .liveEvents ul li {
+    .liveEvents .intro-text ul li {
       font-size: 16px;
       font-weight: 400;
       margin-bottom: 20px; }
-      .liveEvents ul li::before {
+      .liveEvents .intro-text ul li::before {
         content: "• ";
         color: #277CE9; }
   .liveEvents .section-footer {
